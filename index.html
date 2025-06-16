@@ -14,17 +14,20 @@
 <body>
   <div class="main">
     <div class="inputs">
-      <div>
+      <div class="day-input-container">
         <label>Day</label>
         <input type="text" placeholder="DD" id="day">
+        <p class="day-error"></p>
       </div>
-      <div>
+      <div class="month-input-container">
         <label>Month</label>
         <input type="text" placeholder="MM" id="month">
+        <p class="month-error"></p>
       </div>
-      <div>
+      <div class="year-input-container">
         <label>Year</label>
         <input type="text" placeholder="YYYY" id="year">
+        <p class="year-error"></p>
       </div>
 
       <button class="btn" id="btn"><i class="fa-solid fa-arrow-down"></i></button>
@@ -33,15 +36,12 @@
     <div class="result">
       <div class="year-container">
         <span class="year">--</span> years
-        <p class="year-error"></p>
       </div>
       <div class="month-container">
         <span class="month">--</span> months
-        <p class="month-error"></p>
       </div>
       <div class="day-container">
         <span class="day">--</span> days
-        <p class="day-error"></p>
       </div>
     </div>
   </div>
