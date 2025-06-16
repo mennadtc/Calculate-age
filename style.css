@@ -85,10 +85,9 @@ body {
     border: 2px solid var(--grey-200);
 }
 
-.error-message {
-    color: var(--red-400);
-    font-size: 14px;
-    margin-top: 5px;
+.inputs div.error-message input {
+    border: 1px solid var(--red-400);
+    outline: var(--red-400);
 }
 
 .year-error, .month-error, .day-error {
@@ -98,8 +97,8 @@ body {
 
 .btn {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 8rem;
+    width: 8rem;
     background-color: var(--purple-500);
     display: flex;
     justify-content: center;
@@ -113,7 +112,7 @@ body {
 }
 
 .btn i {
-    font-size: 1.8rem;
+    font-size: 3rem;
     color: var(--white);
     transition: transform 0.3s ease-in;
 }
@@ -152,63 +151,72 @@ body {
     color: var(--purple-500);
 }
 
-/* Responsive Design */
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
     .main {
-        width: 90%;
-        height: auto;
-        padding: 20px;
+        width: 85%;
     }
 
-    .inputs {
-        flex-direction: column;
-        align-items: flex-start;
+    .inputs div label {
+        padding-left: 7px;
+        font-size: 0.8rem;
     }
-
+    
     .inputs div {
-        width: 100%;
-        margin: 10px 0;
+        width: 70px;
+        margin-right: 25px;
+        margin-left: 5px;
+    }
+    
+    .inputs div input {
+        padding: 5px;
+        padding-left: 7px;
+        font-size: 1.3rem;
     }
 
     .btn {
-        position: static;
-        margin-top: 20px;
+        height: 5rem;
+        width: 5rem;
+        bottom: -134%;
+        right: 4%;
     }
-
+    
+    .btn i {
+        font-size: 1.8rem;
+    }
+    
     .result {
-        font-size: 40px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .footer {
-        width: 100%;
+        font-size: 3rem;
+        margin: 0px;
+        height: 60%;
+        margin-left: -4%;
+        margin-top: 17%;
     }
 }
 
-@media (max-width: 375px) {
-    .inputs{
-        flex-direction: row;
+
+@media (max-width: 320px) {
+    .inputs div label {
+        font-size: 0.6rem;
     }
-    .inputs div{
-        width: 80px;
+    
+    .inputs div {
+        width: 55px;
     }
+    
     .inputs div input {
-        font-size: 18px;
-        padding: 8px;
+        font-size: 1rem;
     }
 
     .btn {
-        right: 50%;
-        height: 80px;
-        width: 80px;
+        height: 4rem;
+        width: 4rem;
     }
-
+    
     .btn i {
-        font-size: 24px;
+        font-size: 1.65rem;
     }
-
+    
     .result {
-        font-size: 30px;
+        font-size: 2.5rem;
     }
 }
